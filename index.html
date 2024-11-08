@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deadlock Detection Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Deadlock Detection Simulator</h1>
+
+        <div class="form-section">
+            <label for="processCount">Number of Processes:</label>
+            <input type="number" id="processCount" min="1" max="10" placeholder="Enter number of processes" required>
+
+            <label for="resourceCount">Number of Resources:</label>
+            <input type="number" id="resourceCount" min="1" max="10" placeholder="Enter number of resources" required>
+        </div>
+
+        <button id="generateInput">Generate Input Fields</button>
+
+        <div id="inputFieldsContainer" class="hidden">
+            <h3>Enter Allocation and Max Resources</h3>
+            
+            <div id="allocationFields"></div>
+            <div id="maxResourcesFields"></div>
+            <div id="availableResourcesFields"></div>
+
+            <button id="submitData">Submit Data</button>
+        </div>
+
+        <div id="resultContainer" class="hidden">
+            <h3>Result</h3>
+            <pre id="result"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
